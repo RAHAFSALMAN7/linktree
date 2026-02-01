@@ -11,9 +11,7 @@ import {
 } from "lucide-react";
 
 /* =========================
-   🔧 TEMPLATE CONFIG
-   Company: German Technology Auto Service - GTA
-========================= */
+  ========================= */
 
 const BRAND_NAME = "German Technology Auto Service - GTA";
 
