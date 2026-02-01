@@ -18,7 +18,7 @@ const BRAND_NAME = "German Technology Auto Service - GTA";
 const BIO =
   "German Technology Auto Service (GTA) provides professional automotive maintenance and repair services with German precision and expertise.";
 
-const LOGO = "/gta.png"; // لوجو بدون خلفية داخل public/
+const LOGO = "/gta1.png"; // لوجو بدون خلفية داخل public/
 
 /*
   أي رابط فاضي "" = الكبسة تكون Disabled
