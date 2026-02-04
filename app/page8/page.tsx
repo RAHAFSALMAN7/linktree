@@ -11,14 +11,15 @@ import {
 } from "lucide-react";
 
 /* =========================
-  ========================= */
+   CentralCare Branding
+   ========================= */
 
-const BRAND_NAME = "German Technology Auto Service - GTA";
+const BRAND_NAME = "CentralCare Incorporated";
 
 const BIO =
-  "German Technology Auto Service (GTA) provides professional automotive maintenance and repair services with German precision and expertise.";
+  "CentralCare Incorporated is a certified healthcare staffing company providing qualified physicians, nurses, and allied health professionals to federal and private healthcare institutions, committed to quality, compliance, and excellence.";
 
-const LOGO = "/gta.png"; // لوجو بدون خلفية داخل public/
+const LOGO = "/centralcare.png";
 
 /*
   أي رابط فاضي "" = الكبسة تكون Disabled
@@ -26,35 +27,35 @@ const LOGO = "/gta.png"; // لوجو بدون خلفية داخل public/
 const LINKS = [
   {
     label: "Website",
-    url: "", // غير متوفر
+    url: "https://centralcareinc.com/",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
   {
     label: "LinkedIn",
-    url: "", // غير متوفر
+    url: "https://www.linkedin.com/company/centralcare-inc-",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
     label: "Instagram",
-    url: "https://www.instagram.com/gta.auto1/",
+    url: "",
     icon: <Instagram className="w-5 h-5" />,
   },
   {
     label: "YouTube",
-    url: "", // غير متوفر
+    url: "",
     icon: <Youtube className="w-5 h-5" />,
   },
   {
     label: "Facebook",
-    url: "https://www.facebook.com/p/German-Technology-Auto-Service-GTA-100077536399440/",
+    url: "",
     icon: <Facebook className="w-5 h-5" />,
   },
 ];
 
 export default function Page8() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#F4F4F5] px-4 py-24">
+    <main className="min-h-screen flex items-center justify-center bg-[#F7F6F3] px-4 py-24">
       <div className="relative w-full max-w-md">
 
         {/* Avatar */}
@@ -66,7 +67,7 @@ export default function Page8() {
               rounded-full
               bg-white
               shadow-xl
-              border-4 border-[#F4F4F5]
+              border-4 border-[#E8E2D8]
               flex items-center justify-center
               overflow-hidden
             "
@@ -75,7 +76,7 @@ export default function Page8() {
               src={LOGO}
               alt={BRAND_NAME}
               fill
-              className="object-contain scale-90"
+              className="object-contain scale-200"
               priority
             />
           </div>
@@ -89,19 +90,19 @@ export default function Page8() {
           className="
             bg-white
             rounded-[32px]
-            shadow-[0_20px_60px_rgba(0,0,0,0.15)]
+            shadow-[0_20px_60px_rgba(0,0,0,0.12)]
             px-8 pb-10 pt-24
             text-center
-            border border-[#E5E7EB]
+            border border-[#E8E2D8]
           "
         >
           {/* Brand */}
-          <h1 className="text-2xl font-extrabold text-[#4B4B4B]">
+          <h1 className="text-2xl font-extrabold text-[#3A3A3A]">
             {BRAND_NAME}
           </h1>
 
           {/* Bio */}
-          <p className="mt-3 text-sm text-[#374151] leading-relaxed">
+          <p className="mt-3 text-sm text-[#5B5B5B] leading-relaxed">
             {BIO}
           </p>
 
@@ -125,10 +126,10 @@ export default function Page8() {
                     transition-all
                     ${
                       isDisabled
-                        ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
+                        ? "bg-[#F1F1F1] text-[#B0B0B0] border border-[#E0E0E0] cursor-not-allowed"
                         : link.primary
-                        ? "bg-[#4B4B4B] text-white hover:bg-[#D11A1A] shadow-lg"
-                        : "bg-white text-[#4B4B4B] border border-[#4B4B4B] hover:bg-[#4B4B4B] hover:text-white"
+                        ? "bg-[#C9A24D] text-white hover:bg-[#B8943F] shadow-lg"
+                        : "bg-white text-[#C9A24D] border border-[#C9A24D] hover:bg-[#C9A24D] hover:text-white"
                     }
                   `}
                 >
@@ -140,8 +141,8 @@ export default function Page8() {
           </div>
 
           {/* Footer */}
-          <p className="mt-10 text-xs text-[#9CA3AF]">
-            © {BRAND_NAME}
+          <p className="mt-10 text-xs text-[#9A9A9A]">
+            © {new Date().getFullYear()} {BRAND_NAME}. All rights reserved.
           </p>
         </motion.div>
       </div>

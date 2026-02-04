@@ -11,71 +11,75 @@ import {
 } from "lucide-react";
 
 /* =========================
-   🔧 TEMPLATE CONFIG
-   Company: Assystem Radicon
-========================= */
+   GSG – Ground Systems Geophysical
+   ========================= */
 
-const BRAND_NAME = "Assystem Radicon";
+const BRAND_NAME = "GROUND SYSTEMS GEOPHYSICAL (GSG)";
 
 const BIO =
-  "Assystem Radicon provides engineering, consulting, and project management services supporting complex industrial and infrastructure projects.";
+  "Ground Systems Geophysical (GSG) is a leading provider of geophysical, geological, environmental, and engineering solutions across Saudi Arabia and the GCC region. With a dedicated team of scientists, engineers, and experts, GSG delivers advanced, reliable, and innovative services supporting site assessments, resource exploration, and real-time monitoring across various industries.";
 
-const LOGO = "/assystem-radicon.png"; // ضع اللوجو داخل public/
+const TAGLINE =
+  "Integrated Solutions for Your Projects, Backed by Decades of Expertise";
+
+const LOGO = "/gsg.png";
 
 /*
-  أي رابط فاضي "" = الكبسة تكون Disabled
+  أي رابط فاضي \"\" = الكبسة تكون Disabled
 */
 const LINKS = [
   {
     label: "Website",
-    url: "", // لو عندك موقع رسمي ضيفه
+    url: "https://www.gulfconsult.com",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
   {
     label: "LinkedIn",
-    url: "https://www.linkedin.com/company/assystem",
+    url: "",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
     label: "Instagram",
-    url: "https://www.instagram.com/assystem_official/",
+    url: "",
     icon: <Instagram className="w-5 h-5" />,
   },
   {
     label: "YouTube",
-    url: "https://www.youtube.com/@GroupeAssystem",
+    url: "",
     icon: <Youtube className="w-5 h-5" />,
   },
   {
     label: "Facebook",
-    url: "https://www.facebook.com/GroupAssystem/",
+    url: "",
     icon: <Facebook className="w-5 h-5" />,
   },
 ];
 
-export default function Page6() {
+export default function Page8() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#F4F6F8] px-4 py-24">
+    <main className="min-h-screen flex items-center justify-center bg-white px-4 py-24">
       <div className="relative w-full max-w-md">
+
         {/* Avatar */}
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 z-20">
           <div
             className="
+              relative
               w-32 h-32
               rounded-full
               bg-white
               shadow-xl
-              border-4 border-[#F4F6F8]
+              border-4 border-[#0F4C81]
               flex items-center justify-center
+              overflow-hidden
             "
           >
             <Image
               src={LOGO}
               alt={BRAND_NAME}
-              width={200}
-              height={200}
-              className="object-contain"
+              fill
+              className="object-contain scale-100"
               priority
             />
           </div>
@@ -92,17 +96,27 @@ export default function Page6() {
             shadow-[0_20px_60px_rgba(0,0,0,0.15)]
             px-8 pb-10 pt-24
             text-center
-            border border-[#E5E5E5]
+            border border-[#E5E7EB]
           "
         >
           {/* Brand */}
-          <h1 className="text-3xl font-extrabold text-[#E11D2E]">
+          <h1 className="text-2xl font-extrabold text-[#0F2A44]">
             {BRAND_NAME}
           </h1>
 
+          {/* Manager */}
+          <p className="mt-1 text-sm font-medium text-[#6B7280]">
+            Manager: Eng. Rabah Yehya
+          </p>
+
           {/* Bio */}
-          <p className="mt-3 text-sm text-[#555555] leading-relaxed">
+          <p className="mt-4 text-sm text-[#374151] leading-relaxed">
             {BIO}
+          </p>
+
+          {/* Tagline */}
+          <p className="mt-4 text-sm font-semibold text-[#0F4C81]">
+            {TAGLINE}
           </p>
 
           {/* Links */}
@@ -127,8 +141,8 @@ export default function Page6() {
                       isDisabled
                         ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
                         : link.primary
-                        ? "bg-[#E11D2E] text-white hover:bg-[#C41625] shadow-lg"
-                        : "bg-white text-[#E11D2E] border border-[#E11D2E] hover:bg-[#E11D2E] hover:text-white"
+                        ? "bg-[#0F4C81] text-white hover:bg-[#0C3A63] shadow-lg"
+                        : "bg-white text-[#0F4C81] border border-[#0F4C81] hover:bg-[#0F4C81] hover:text-white"
                     }
                   `}
                 >
@@ -140,8 +154,8 @@ export default function Page6() {
           </div>
 
           {/* Footer */}
-          <p className="mt-10 text-xs text-[#999999]">
-            © {BRAND_NAME}
+          <p className="mt-10 text-xs text-[#9CA3AF]">
+            © {new Date().getFullYear()} Ground Systems Geophysical. All rights reserved.
           </p>
         </motion.div>
       </div>

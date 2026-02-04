@@ -11,50 +11,51 @@ import {
 } from "lucide-react";
 
 /* =========================
-  ========================= */
+   ANTIQUE CREATIONS
+   ========================= */
 
-const BRAND_NAME = "German Technology Auto Service - GTA";
+const BRAND_NAME = "ANTIQUE CREATIONS";
 
 const BIO =
-  "German Technology Auto Service (GTA) provides professional automotive maintenance and repair services with German precision and expertise.";
+  "Antique Creations (ACWM) is a leading Saudi-based contracting company established in 2016 and proudly part of the Ali Al-Harbi Group (Alika). The company specializes in engineering, finishing, and comprehensive Mechanical, Electrical, and Plumbing (MEP) building services, holding the highest first-degree classification for contracting in Saudi Arabia.";
 
-const LOGO = "/gta.png"; // لوجو بدون خلفية داخل public/
+const LOGO = "/antique.png";
 
 /*
-  أي رابط فاضي "" = الكبسة تكون Disabled
+  أي رابط فاضي \"\" = الكبسة تكون Disabled
 */
 const LINKS = [
   {
     label: "Website",
-    url: "", // غير متوفر
+    url: "https://acwm-sa.com",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
   {
     label: "LinkedIn",
-    url: "", // غير متوفر
+    url: "",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
     label: "Instagram",
-    url: "https://www.instagram.com/gta.auto1/",
+    url: "",
     icon: <Instagram className="w-5 h-5" />,
   },
   {
     label: "YouTube",
-    url: "", // غير متوفر
+    url: "",
     icon: <Youtube className="w-5 h-5" />,
   },
   {
     label: "Facebook",
-    url: "https://www.facebook.com/p/German-Technology-Auto-Service-GTA-100077536399440/",
+    url: "",
     icon: <Facebook className="w-5 h-5" />,
   },
 ];
 
 export default function Page8() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#F4F4F5] px-4 py-24">
+    <main className="min-h-screen flex items-center justify-center bg-white px-4 py-24">
       <div className="relative w-full max-w-md">
 
         {/* Avatar */}
@@ -66,7 +67,7 @@ export default function Page8() {
               rounded-full
               bg-white
               shadow-xl
-              border-4 border-[#F4F4F5]
+              border-4 border-[#5A2E14]
               flex items-center justify-center
               overflow-hidden
             "
@@ -96,12 +97,17 @@ export default function Page8() {
           "
         >
           {/* Brand */}
-          <h1 className="text-2xl font-extrabold text-[#4B4B4B]">
+          <h1 className="text-2xl font-extrabold text-[#4A2C1A]">
             {BRAND_NAME}
           </h1>
 
+          {/* Manager */}
+          <p className="mt-1 text-sm font-medium text-[#6B7280]">
+            Manager: Mohammed Ghanem
+          </p>
+
           {/* Bio */}
-          <p className="mt-3 text-sm text-[#374151] leading-relaxed">
+          <p className="mt-4 text-sm text-[#374151] leading-relaxed">
             {BIO}
           </p>
 
@@ -127,8 +133,8 @@ export default function Page8() {
                       isDisabled
                         ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
                         : link.primary
-                        ? "bg-[#4B4B4B] text-white hover:bg-[#D11A1A] shadow-lg"
-                        : "bg-white text-[#4B4B4B] border border-[#4B4B4B] hover:bg-[#4B4B4B] hover:text-white"
+                        ? "bg-[#5A2E14] text-white hover:bg-[#3E1F0F] shadow-lg"
+                        : "bg-white text-[#5A2E14] border border-[#5A2E14] hover:bg-[#5A2E14] hover:text-white"
                     }
                   `}
                 >
@@ -141,7 +147,7 @@ export default function Page8() {
 
           {/* Footer */}
           <p className="mt-10 text-xs text-[#9CA3AF]">
-            © {BRAND_NAME}
+            © {new Date().getFullYear()} Antique Creations. All rights reserved.
           </p>
         </motion.div>
       </div>

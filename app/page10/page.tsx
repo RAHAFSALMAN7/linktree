@@ -11,50 +11,51 @@ import {
 } from "lucide-react";
 
 /* =========================
-  ========================= */
+   Al-Rakaez Technical Co. Ltd.
+   ========================= */
 
-const BRAND_NAME = "German Technology Auto Service - GTA";
+const BRAND_NAME = "Al-Rakaez Technical Co. Ltd. (RK)";
 
 const BIO =
-  "German Technology Auto Service (GTA) provides professional automotive maintenance and repair services with German precision and expertise.";
+  "Al-Rakaez Technical Co. Ltd. (RK) is a Saudi-based company specializing in Civil, Finishing, Mechanical, Electrical, and Plumbing (MEP) building services. RK strives to deliver the highest standards of execution by carefully understanding each client’s requirements and collaborating to develop tailored and effective project solutions.";
 
-const LOGO = "/gta.png"; // لوجو بدون خلفية داخل public/
+const LOGO = "/rk.png";
 
 /*
-  أي رابط فاضي "" = الكبسة تكون Disabled
+  أي رابط فاضي \"\" = الكبسة تكون Disabled
 */
 const LINKS = [
   {
     label: "Website",
-    url: "", // غير متوفر
+    url: "https://www.rk-arabia.com",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
   {
     label: "LinkedIn",
-    url: "", // غير متوفر
+    url: "",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
     label: "Instagram",
-    url: "https://www.instagram.com/gta.auto1/",
+    url: "",
     icon: <Instagram className="w-5 h-5" />,
   },
   {
     label: "YouTube",
-    url: "", // غير متوفر
+    url: "",
     icon: <Youtube className="w-5 h-5" />,
   },
   {
     label: "Facebook",
-    url: "https://www.facebook.com/p/German-Technology-Auto-Service-GTA-100077536399440/",
+    url: "",
     icon: <Facebook className="w-5 h-5" />,
   },
 ];
 
 export default function Page8() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#F4F4F5] px-4 py-24">
+    <main className="min-h-screen flex items-center justify-center bg-white px-4 py-24">
       <div className="relative w-full max-w-md">
 
         {/* Avatar */}
@@ -66,7 +67,7 @@ export default function Page8() {
               rounded-full
               bg-white
               shadow-xl
-              border-4 border-[#F4F4F5]
+              border-4 border-[#C9A24D]
               flex items-center justify-center
               overflow-hidden
             "
@@ -75,7 +76,7 @@ export default function Page8() {
               src={LOGO}
               alt={BRAND_NAME}
               fill
-              className="object-contain scale-90"
+              className="object-contain scale-200"
               priority
             />
           </div>
@@ -96,12 +97,17 @@ export default function Page8() {
           "
         >
           {/* Brand */}
-          <h1 className="text-2xl font-extrabold text-[#4B4B4B]">
+          <h1 className="text-2xl font-extrabold text-[#1F1F1F]">
             {BRAND_NAME}
           </h1>
 
+          {/* Manager */}
+          <p className="mt-1 text-sm font-medium text-[#6B7280]">
+            Manager: Jaffar Al Sayori
+          </p>
+
           {/* Bio */}
-          <p className="mt-3 text-sm text-[#374151] leading-relaxed">
+          <p className="mt-4 text-sm text-[#374151] leading-relaxed">
             {BIO}
           </p>
 
@@ -127,8 +133,8 @@ export default function Page8() {
                       isDisabled
                         ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
                         : link.primary
-                        ? "bg-[#4B4B4B] text-white hover:bg-[#D11A1A] shadow-lg"
-                        : "bg-white text-[#4B4B4B] border border-[#4B4B4B] hover:bg-[#4B4B4B] hover:text-white"
+                        ? "bg-[#C9A24D] text-white hover:bg-[#B8943F] shadow-lg"
+                        : "bg-white text-[#1F1F1F] border border-[#1F1F1F] hover:bg-[#1F1F1F] hover:text-white"
                     }
                   `}
                 >
@@ -141,7 +147,7 @@ export default function Page8() {
 
           {/* Footer */}
           <p className="mt-10 text-xs text-[#9CA3AF]">
-            © {BRAND_NAME}
+            © {new Date().getFullYear()} Al-Rakaez Technical Co. Ltd. All rights reserved.
           </p>
         </motion.div>
       </div>
