@@ -11,52 +11,51 @@ import {
 } from "lucide-react";
 
 /* =========================
-   🔧 TEMPLATE CONFIG
-   Company: Central Medical Care
-========================= */
+   GULF DORRAH REAL ESTATE DEVELOPMENT
+   ========================= */
 
-const BRAND_NAME = "Central Medical Care";
+const BRAND_NAME = "GULF DORRAH REAL ESTATE DEVELOPMENT";
 
 const BIO =
-  "Central Medical Care Polyclinic delivers comprehensive healthcare services with a patient-centered approach and modern medical standards.";
+  "Gulf Dorrah Real Estate Development is a Saudi-based company specializing in luxury residential properties with modern designs and high-quality construction. The company focuses on creating community apartments that offer comfort, privacy, and contemporary design, ensuring long-term value for families and residents. Each project is carefully developed with attention to detail, quality materials, and practical layouts that support a modern lifestyle.";
 
-const LOGO = "/centralcare.png"; // لازم يكون داخل public/
+const LOGO = "/gulfdorrah.png";
 
 /*
-  أي رابط فاضي "" = الكبسة تكون Disabled
+  أي رابط فاضي \"\" = الكبسة تكون Disabled
 */
 const LINKS = [
   {
     label: "Website",
-    url: "", // غير متوفر
+    url: "https://dorrah.topacademy.website/#",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
   {
     label: "LinkedIn",
-    url: "https://www.linkedin.com/company/central-care",
+    url: "",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
     label: "Instagram",
-    url: "https://www.instagram.com/centralcare/",
+    url: "",
     icon: <Instagram className="w-5 h-5" />,
   },
   {
     label: "YouTube",
-    url: "https://www.youtube.com/@centralmedicalcare3288",
+    url: "",
     icon: <Youtube className="w-5 h-5" />,
   },
   {
     label: "Facebook",
-    url: "https://www.facebook.com/Centralcareksa/",
+    url: "",
     icon: <Facebook className="w-5 h-5" />,
   },
 ];
 
-export default function Page7() {
+export default function Page8() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#F7F6F4] px-4 py-24">
+    <main className="min-h-screen flex items-center justify-center bg-white px-4 py-24">
       <div className="relative w-full max-w-md">
 
         {/* Avatar */}
@@ -68,7 +67,7 @@ export default function Page7() {
               rounded-full
               bg-white
               shadow-xl
-              border-4 border-[#F7F6F4]
+              border-4 border-[#1C8BCB]
               flex items-center justify-center
               overflow-hidden
             "
@@ -77,7 +76,7 @@ export default function Page7() {
               src={LOGO}
               alt={BRAND_NAME}
               fill
-              className="object-contain scale-150"
+              className="object-contain scale-90"
               priority
             />
           </div>
@@ -91,19 +90,24 @@ export default function Page7() {
           className="
             bg-white
             rounded-[32px]
-            shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+            shadow-[0_20px_60px_rgba(0,0,0,0.15)]
             px-8 pb-10 pt-24
             text-center
-            border border-[#E5E2DC]
+            border border-[#E5E7EB]
           "
         >
           {/* Brand */}
-          <h1 className="text-3xl font-extrabold text-[#B89A6A]">
+          <h1 className="text-2xl font-extrabold text-[#0E5E8A]">
             {BRAND_NAME}
           </h1>
 
+          {/* Manager */}
+          <p className="mt-1 text-sm font-medium text-[#4FB88A]">
+            Manager: Fadel Muhialdeen
+          </p>
+
           {/* Bio */}
-          <p className="mt-3 text-sm text-[#2B2B2B] leading-relaxed">
+          <p className="mt-4 text-sm text-[#374151] leading-relaxed">
             {BIO}
           </p>
 
@@ -129,8 +133,8 @@ export default function Page7() {
                       isDisabled
                         ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
                         : link.primary
-                        ? "bg-[#B89A6A] text-white hover:bg-[#9E845A] shadow-lg"
-                        : "bg-white text-[#B89A6A] border border-[#B89A6A] hover:bg-[#B89A6A] hover:text-white"
+                        ? "bg-[#1C8BCB] text-white hover:bg-[#0E5E8A] shadow-lg"
+                        : "bg-white text-[#4FB88A] border border-[#4FB88A] hover:bg-[#4FB88A] hover:text-white"
                     }
                   `}
                 >
@@ -142,8 +146,8 @@ export default function Page7() {
           </div>
 
           {/* Footer */}
-          <p className="mt-10 text-xs text-[#9E9E9E]">
-            © {BRAND_NAME}
+          <p className="mt-10 text-xs text-[#9CA3AF]">
+            © {new Date().getFullYear()} Gulf Dorrah Real Estate Development. All rights reserved.
           </p>
         </motion.div>
       </div>
