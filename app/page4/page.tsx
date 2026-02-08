@@ -28,7 +28,7 @@ const LOGO = "/etlco.png"; // حط اللوجو داخل public/
 const LINKS = [
   {
     label: "Website",
-    url: "", // غير متوفر
+    url: "https://etlco.com.sa/", // غير متوفر
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
@@ -123,10 +123,9 @@ export default function Page4() {
                     w-full flex items-center justify-center gap-3
                     py-4 rounded-full font-semibold
                     transition-all
-                    ${
-                      isDisabled
-                        ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
-                        : link.primary
+                    ${isDisabled
+                      ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
+                      : link.primary
                         ? "bg-[#2563EB] text-white hover:bg-[#1D4ED8] shadow-lg"
                         : "bg-white text-[#2563EB] border border-[#2563EB] hover:bg-[#2563EB] hover:text-white"
                     }

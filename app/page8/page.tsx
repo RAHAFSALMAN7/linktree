@@ -27,7 +27,7 @@ const LOGO = "/centralcare.png";
 const LINKS = [
   {
     label: "Website",
-    url: "https://centralcareinc.com/",
+    url: "https://www.centralmedicalcare.com/",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
@@ -124,10 +124,9 @@ export default function Page8() {
                     w-full flex items-center justify-center gap-3
                     py-4 rounded-full font-semibold
                     transition-all
-                    ${
-                      isDisabled
-                        ? "bg-[#F1F1F1] text-[#B0B0B0] border border-[#E0E0E0] cursor-not-allowed"
-                        : link.primary
+                    ${isDisabled
+                      ? "bg-[#F1F1F1] text-[#B0B0B0] border border-[#E0E0E0] cursor-not-allowed"
+                      : link.primary
                         ? "bg-[#C9A24D] text-white hover:bg-[#B8943F] shadow-lg"
                         : "bg-white text-[#C9A24D] border border-[#C9A24D] hover:bg-[#C9A24D] hover:text-white"
                     }

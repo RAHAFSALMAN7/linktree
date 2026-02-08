@@ -26,7 +26,7 @@ const LOGO = "/gta1.png"; // لوجو بدون خلفية داخل public/
 const LINKS = [
   {
     label: "Website",
-    url: "", // غير متوفر
+    url: "https://www.gtaksa.com", // غير متوفر
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },

@@ -75,20 +75,19 @@ export default function Page8() {
             <Image
               src={LOGO}
               alt={BRAND_NAME}
-              fill
+              fill 
               className="object-contain scale-90"
               priority
             />
           </div>
         </div>
-
+        
         {/* Card */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="
-            bg-white
+          className="           bg-white
             rounded-[32px]
             shadow-[0_20px_60px_rgba(0,0,0,0.15)]
             px-8 pb-10 pt-24

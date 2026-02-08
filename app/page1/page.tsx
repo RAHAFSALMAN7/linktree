@@ -25,7 +25,7 @@ const LOGO = "/amt.png"; // موجود داخل public/
 const LINKS = [
   {
     label: "Website",
-    url: "https://amt-arabia.com",
+    url: "https://amtwebsite.vercel.app/",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },

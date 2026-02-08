@@ -28,7 +28,7 @@ const LOGO = "/gulf-consult.png"; // حط اللوجو داخل public/
 const LINKS = [
   {
     label: "Website",
-    url: "", // لو ما في موقع
+    url: "https://www.gc-eng.com/", // لو ما في موقع
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
@@ -123,10 +123,9 @@ export default function Page3() {
                     w-full flex items-center justify-center gap-3
                     py-4 rounded-full font-semibold
                     transition-all
-                    ${
-                      isDisabled
-                        ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
-                        : link.primary
+                    ${isDisabled
+                      ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
+                      : link.primary
                         ? "bg-[#1E1B8C] text-white hover:bg-[#2A2FA3] shadow-lg"
                         : "bg-white text-[#1E1B8C] border border-[#1E1B8C] hover:bg-[#1E1B8C] hover:text-white"
                     }
