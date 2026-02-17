@@ -9,6 +9,7 @@ import {
   Youtube,
   Facebook,
   Twitter,
+  MessageCircle, // 👈 أيقونة واتساب
 } from "lucide-react";
 
 /* =========================
@@ -29,6 +30,11 @@ const LINKS = [
     url: "https://amt-arabia.net/",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
+  },
+  {
+    label: "WhatsApp",
+    url: "https://wa.me/966554593722",
+    icon: <MessageCircle className="w-5 h-5" />,
   },
   {
     label: "LinkedIn",
@@ -63,17 +69,7 @@ export default function Page1() {
       <div className="relative w-full max-w-md">
         {/* ================= Avatar ================= */}
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 z-20">
-          <div
-            className="
-              relative
-              w-32 h-32
-              rounded-full
-              bg-white
-              shadow-xl
-              border-4 border-[#F5F5F5]
-              flex items-center justify-center
-            "
-          >
+          <div className="relative w-32 h-32 rounded-full bg-white shadow-xl border-4 border-[#F5F5F5] flex items-center justify-center">
             <Image
               src={LOGO}
               alt={BRAND_NAME}
@@ -90,21 +86,12 @@ export default function Page1() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="
-            bg-white
-            rounded-[32px]
-            shadow-[0_20px_60px_rgba(0,0,0,0.15)]
-            px-8 pb-10 pt-24
-            text-center
-            border border-[#E5E5E5]
-          "
+          className="bg-white rounded-[32px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] px-8 pb-10 pt-24 text-center border border-[#E5E5E5]"
         >
-          {/* Brand */}
           <h1 className="text-3xl font-extrabold text-[#2B2B2B]">
             {BRAND_NAME}
           </h1>
 
-          {/* Bio */}
           <p className="mt-3 text-sm text-[#555555] leading-relaxed">
             {BIO}
           </p>
@@ -134,7 +121,6 @@ export default function Page1() {
             ))}
           </div>
 
-          {/* Footer */}
           <p className="mt-10 text-xs text-[#999999]">
             © {BRAND_NAME}
           </p>
