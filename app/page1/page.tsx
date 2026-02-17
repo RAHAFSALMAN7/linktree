@@ -8,6 +8,7 @@ import {
   Instagram,
   Youtube,
   Facebook,
+  Twitter,
 } from "lucide-react";
 
 /* =========================
@@ -25,7 +26,7 @@ const LOGO = "/amt.png"; // موجود داخل public/
 const LINKS = [
   {
     label: "Website",
-    url: "https://amtwebsite.vercel.app/",
+    url: "https://amt-arabia.net/",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
@@ -33,6 +34,11 @@ const LINKS = [
     label: "LinkedIn",
     url: "https://www.linkedin.com/company/amt-arabia/",
     icon: <Linkedin className="w-5 h-5" />,
+  },
+  {
+    label: "X",
+    url: "https://x.com/amt_arabia2009",
+    icon: <Twitter className="w-5 h-5" />,
   },
   {
     label: "Instagram",
@@ -68,18 +74,12 @@ export default function Page1() {
               flex items-center justify-center
             "
           >
-            {/* 
-              IMPORTANT:
-              - object-contain → ما يقص
-              - p-4 → يخفي أي حواف مربعة
-              - no overflow-hidden → ما يبان مربع
-            */}
             <Image
               src={LOGO}
               alt={BRAND_NAME}
               width={200}
               height={200}
-              className="object-contain "
+              className="object-contain"
               priority
             />
           </div>
