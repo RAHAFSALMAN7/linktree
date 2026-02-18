@@ -6,7 +6,6 @@ import {
   Globe,
   Linkedin,
   Instagram,
-  Youtube,
   Facebook,
   Twitter,
   MessageCircle,
@@ -24,41 +23,38 @@ const BIO =
 
 const LOGO = "/white-logo.png";
 
+/* 🔹 Top Icons (Website + WhatsApp only) */
 const SOCIAL_ICONS = [
   {
     url: "https://alikaholding.com/",
     icon: <Globe className="w-5 h-5" />,
   },
   {
-    url: "https://wa.me/",
+    url: "", // empty = disabled
     icon: <MessageCircle className="w-5 h-5" />,
   },
 ];
 
+/* 🔹 Social Buttons (Disabled if no URL) */
 const LINKS = [
   {
-    label: "Official Website",
-    url: "https://alikaholding.com/",
-    icon: <Globe className="w-5 h-5" />,
-  },
-  {
     label: "LinkedIn",
-    url: "#",
+    url: "",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
     label: "X",
-    url: "#",
+    url: "",
     icon: <Twitter className="w-5 h-5" />,
   },
   {
     label: "Instagram",
-    url: "#",
+    url: "",
     icon: <Instagram className="w-5 h-5" />,
   },
   {
     label: "Facebook",
-    url: "#",
+    url: "",
     icon: <Facebook className="w-5 h-5" />,
   },
 ];
@@ -95,35 +91,54 @@ export default function Page13() {
             {BIO}
           </p>
 
-          {/* ====== Horizontal Icons ====== */}
+          {/* ====== Top Icons ====== */}
           <div className="flex justify-center gap-5 mt-6">
-            {SOCIAL_ICONS.map((item, i) => (
-              <a
-                key={i}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center rounded-full border border-[#0A3D62] text-[#0A3D62] hover:bg-[#0A3D62] hover:text-white transition-all"
-              >
-                {item.icon}
-              </a>
-            ))}
+            {SOCIAL_ICONS.map((item, i) =>
+              item.url ? (
+                <a
+                  key={i}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 flex items-center justify-center rounded-full border border-[#0A3D62] text-[#0A3D62] hover:bg-[#0A3D62] hover:text-white transition-all"
+                >
+                  {item.icon}
+                </a>
+              ) : (
+                <div
+                  key={i}
+                  className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 text-gray-300 cursor-not-allowed"
+                >
+                  {item.icon}
+                </div>
+              )
+            )}
           </div>
 
-          {/* ====== Buttons ====== */}
+          {/* ====== Social Buttons ====== */}
           <div className="mt-10 space-y-4">
-            {LINKS.map((link, i) => (
-              <a
-                key={i}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-3 py-4 rounded-full font-semibold transition-all bg-white text-[#2B2B2B] border border-[#0A3D62] hover:bg-[#0A3D62] hover:text-white"
-              >
-                {link.icon}
-                {link.label}
-              </a>
-            ))}
+            {LINKS.map((link, i) =>
+              link.url ? (
+                <a
+                  key={i}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-3 py-4 rounded-full font-semibold transition-all bg-white text-[#2B2B2B] border border-[#0A3D62] hover:bg-[#0A3D62] hover:text-white"
+                >
+                  {link.icon}
+                  {link.label}
+                </a>
+              ) : (
+                <div
+                  key={i}
+                  className="w-full flex items-center justify-center gap-3 py-4 rounded-full font-semibold bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
+                >
+                  {link.icon}
+                  {link.label}
+                </div>
+              )
+            )}
           </div>
 
           <p className="mt-10 text-xs text-[#999999]">
