@@ -20,7 +20,7 @@ const BRAND_NAME = "IDC Arabia";
 const BIO =
   "IDC Arabia provides cutting-edge digital solutions and enterprise services across the region.";
 
-const LOGO = "/IDC.png"; // ضع اللوجو داخل public/
+const LOGO = "/IDC.png";
 
 /*
   أي رابط فاضي "" = الكبسة تكون Disabled
@@ -28,28 +28,28 @@ const LOGO = "/IDC.png"; // ضع اللوجو داخل public/
 const LINKS = [
   {
     label: "Website",
-    url: "https://idcarabia.com",
+    url: "https://idc-arabia.com/ar/الرئيسية/",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
   {
     label: "LinkedIn",
-    url: "", // فاضي
+    url: "",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
     label: "Instagram",
-    url: "https://www.instagram.com/idc_arabia/",
+    url: "https://www.instagram.com/idc.arabia",
     icon: <Instagram className="w-5 h-5" />,
   },
   {
     label: "YouTube",
-    url: "", // فاضي
+    url: "",
     icon: <Youtube className="w-5 h-5" />,
   },
   {
     label: "Facebook",
-    url: "", // فاضي
+    url: "",
     icon: <Facebook className="w-5 h-5" />,
   },
 ];
@@ -58,18 +58,10 @@ export default function Page2() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-[#F4F6F8] px-4 py-24">
       <div className="relative w-full max-w-md">
+
         {/* Avatar */}
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 z-20">
-          <div
-            className="
-              w-32 h-32
-              rounded-full
-              bg-white
-              shadow-xl
-              border-4 border-[#F4F6F8]
-              flex items-center justify-center
-            "
-          >
+          <div className="w-32 h-32 rounded-full bg-white shadow-xl border-4 border-[#F4F6F8] flex items-center justify-center">
             <Image
               src={LOGO}
               alt={BRAND_NAME}
@@ -86,14 +78,7 @@ export default function Page2() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="
-            bg-white
-            rounded-[32px]
-            shadow-[0_20px_60px_rgba(0,0,0,0.15)]
-            px-8 pb-10 pt-24
-            text-center
-            border border-[#E5E5E5]
-          "
+          className="bg-white rounded-[32px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] px-8 pb-10 pt-24 text-center border border-[#E5E5E5]"
         >
           {/* Brand */}
           <h1 className="text-3xl font-extrabold text-[#2B2B2B]">
@@ -121,8 +106,7 @@ export default function Page2() {
                   }}
                   className={`
                     w-full flex items-center justify-center gap-3
-                    py-4 rounded-full font-semibold
-                    transition-all
+                    py-4 rounded-full font-semibold transition-all
                     ${
                       isDisabled
                         ? "bg-gray-100 text-gray-400 border border-gray-200 cursor-not-allowed"
