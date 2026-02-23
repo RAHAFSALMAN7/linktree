@@ -30,7 +30,7 @@ const LOGO = "/gsg.png";
 const LINKS = [
   {
     label: "Website",
-    url: "https://www.gulfconsult.com",
+    url: "https://gs-geo.com/",
     icon: <Globe className="w-5 h-5" />,
     primary: true,
   },
