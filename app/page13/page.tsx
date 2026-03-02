@@ -19,7 +19,7 @@ import {
 const BRAND_NAME = "Ali Khudair Al Harbi Holding Group";
 
 const BIO =
-  "At Ali Khudair Al Harbi Holding Group, we are a leading Saudi investment group dedicated to managing and growing our assets through a diversified portfolio across strategic sectors including professional services, technology & telecommunications, healthcare, and real estate development. We believe that smart investment is the true driver of sustainable growth. Through our innovative vision, we seize promising opportunities and build long-term investments that enhance operational efficiency and increase the value of our subsidiaries, creating sustainable value for our shareholders and partners.";
+  "Ali Khudair Al Harbi Holding Group is a Saudi investment group managing a diversified portfolio across professional services, technology, healthcare, and real estate, focused on sustainable growth and long-term value creation.";
 
 const LOGO = "/white-logo.png";
 
@@ -35,11 +35,11 @@ const SOCIAL_ICONS = [
   },
 ];
 
-/* 🔹 Social Buttons (Disabled if no URL) */
+/* 🔹 Social Buttons */
 const LINKS = [
   {
     label: "LinkedIn",
-    url: "",
+    url: "https://www.linkedin.com/company/alika-holding-group/",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
