@@ -36,7 +36,7 @@ const LINKS = [
   },
   {
     label: "LinkedIn",
-    url: "",
+    url: "https://www.linkedin.com/company/ground-systems-geophysical-consulting/",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
