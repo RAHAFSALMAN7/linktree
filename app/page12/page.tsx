@@ -6,6 +6,7 @@ import {
   Globe,
   Linkedin,
   Instagram,
+  Twitter,
   Youtube,
   Facebook,
 } from "lucide-react";
@@ -25,7 +26,7 @@ const TAGLINE =
 const LOGO = "/gulfconsult.png";
 
 /*
-  أي رابط فاضي \"\" = الكبسة تكون Disabled
+  أي رابط فاضي "" = الكبسة تكون Disabled
 */
 const LINKS = [
   {
@@ -36,13 +37,18 @@ const LINKS = [
   },
   {
     label: "LinkedIn",
-    url: "",
+    url: "https://www.linkedin.com/company/gulf-consult-for-laboratory-material-testing/",
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
     label: "Instagram",
-    url: "",
+    url: "https://www.instagram.com/gulfconsult_",
     icon: <Instagram className="w-5 h-5" />,
+  },
+  {
+    label: "Twitter",
+    url: "https://x.com/gulfconsult_",
+    icon: <Twitter className="w-5 h-5" />,
   },
   {
     label: "YouTube",
@@ -60,7 +66,6 @@ export default function Page8() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-white px-4 py-24">
       <div className="relative w-full max-w-md">
-
         {/* Avatar */}
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 z-20">
           <div
